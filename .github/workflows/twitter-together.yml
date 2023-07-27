@@ -13,7 +13,7 @@ jobs:
     permissions: write-all
     name: Tweet
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - name: checkout main
         uses: actions/checkout@v3
